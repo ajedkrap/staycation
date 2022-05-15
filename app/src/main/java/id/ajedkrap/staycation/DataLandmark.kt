@@ -1,6 +1,6 @@
 package id.ajedkrap.staycation
 
-object dataLandmark {
+object DataLandmark {
     val aucklandLandmarks = arrayListOf(
         Landmark(
            "Sky Tower",

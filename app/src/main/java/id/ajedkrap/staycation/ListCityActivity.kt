@@ -1,10 +1,12 @@
 package id.ajedkrap.staycation
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Point
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import id.ajedkrap.staycation.databinding.ActivityListCityBinding
+
 
 class ListCityActivity : AppCompatActivity() {
 
@@ -15,7 +17,7 @@ class ListCityActivity : AppCompatActivity() {
         binding = ActivityListCityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val cityList = dataCity().getCities()
+        val cityList = DataCity().getCities()
         val cityAdapter = CityAdapter(cityList, applicationContext)
 
         with(binding){
@@ -31,4 +33,6 @@ class ListCityActivity : AppCompatActivity() {
             }
         })
     }
+
+
 }
